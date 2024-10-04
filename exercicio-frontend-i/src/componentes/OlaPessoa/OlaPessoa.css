@@ -1,0 +1,8 @@
+.olaPessoa {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+  
+    margin: 16px;
+  }

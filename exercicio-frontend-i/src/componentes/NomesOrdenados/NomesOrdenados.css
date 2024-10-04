@@ -1,0 +1,9 @@
+.nomesOrdenados {
+    display: flex;
+    justify-content: start;
+    background-color: pink;
+    color: red;
+  
+    margin: 16px;
+  }
+  
