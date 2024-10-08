@@ -17,6 +17,7 @@ import Divisao from './componentes/Divisao/Divisao';
 import Multiplicacao from './componentes/Multiplicacao/Multiplicacao';
 import Calculadora from './componentes/Calculadora/Calculadora';
 import TamanhoTexto from './componentes/TamanhoTexto/TamanhoTexto';
+import NomesOrdenados from './componentes/NomesOrdenados/NomesOrdenados';
 
 function App() {
   return (
@@ -147,7 +148,8 @@ function App() {
         19. Crie um componente chamado 'NomesOrdenados' que aceita uma prop chamado 'nomes' e deve ser uma lista com pelo menos 5 nomes de pessoas aleatórias e não ordenada. O componente deve mostrar: Uma lista ordenada dos nomes em ordem alfabética em uma ol com o fundo rosa, texto na cor vermelha. Utilize a função sort para ordenar a lista.
       </span>
 
-
+      <NomesOrdenados nomes = {['Jesus Cristo', 'Ayrton Sena', 'Pablo Escobar', 'Papa Fransisco','Maria Rita']} />
+      
     </>
   );
 }
