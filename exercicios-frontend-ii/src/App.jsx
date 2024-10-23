@@ -1,3 +1,4 @@
+import AdicionarNome from "./componentes/AdicionarNome/AdicionarNome";
 import BotaoContador from "./componentes/BotaoContador/BotaoContador";
 import CalculoIMC from "./componentes/CalculoIMC/CalculoIMC";
 import CambioDolar from "./componentes/CambioDolar/CambioDolar";
@@ -6,6 +7,7 @@ import Contador from "./componentes/Contador/Contador";
 import Diminuir from "./componentes/Diminuir/Diminuir";
 import Dividir from "./componentes/Dividir/Dividir";
 import Multiplicar from "./componentes/Multiplicar/Multiplicar";
+import RemoverNome from "./componentes/RemoverNome/RemoverNome";
 import Somar from "./componentes/Somar/Somar";
 
 function App() {
@@ -79,7 +81,7 @@ function App() {
       <hr />
       <span>
         9. Considere a fórmula do IMC = peso / (altura * altura) e status: menor
-        de 18.5 = "Abaixo do peso", menor de 25 = "Peso normal", menor de30 =
+        de 18.5 = "Abaixo do peso", menor de 25 = "Peso normal", menor de 30 =
         "Sobrepeso" e acima de 30 = "Obeso" . Crie um componente chamado
         CalculoIMC que contém dois campos tipo numérico, e um botão "Calcular
         IMC" que ao ser clicado deve fazer o cálculo e mostrar o resultado,
@@ -88,6 +90,21 @@ function App() {
       <br />
       <CalculoIMC />
       <hr />
+      <span>
+        10. Crie um componente chamado AdicionarNome que contém um campo do tipo
+        texto e um botão "Adicionar" que ao ser clicado deve adicionar o nome
+        digitado em uma lista e mostrar conforme exemplo:
+      </span>
+      <br />
+      <AdicionarNome />
+      <hr />
+      <span>
+        11. Crie um componente chamado RemoverNome que contém uma lista de nomes
+        com o botão "Remover" ao lado que ao ser clicado deve remover o
+        respectivo nome da lista, conforme o exemplo:
+      </span>
+      <br />
+      <RemoverNome />
     </>
   );
 }

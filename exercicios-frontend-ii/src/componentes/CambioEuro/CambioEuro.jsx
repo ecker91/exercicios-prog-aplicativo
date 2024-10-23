@@ -5,13 +5,16 @@ const CambioEuro = () => {
   const [valorCampoDois, setValorCampoDois] = useState("");
 
   const alterarValorCampoUm = (event) => {
-    setValorCampoUm(event.target.value);
-    setValorCampoDois(valorCampoUm / 5.5);
+    const valorCampo = event.target.value;
+
+    setValorCampoUm(valorCampo);
+    setValorCampoDois(valorCampo / 5.5);
   };
 
   const alterarValorCampoDois = (event) => {
-    setValorCampoDois(event.target.value);
-    setValorCampoUm(valorCampoDois * 5.5);
+    const valorCampo = event.target.value;
+    setValorCampoDois(valorCampo);
+    setValorCampoUm(valorCampo * 5.5);
   };
   return (
     <>

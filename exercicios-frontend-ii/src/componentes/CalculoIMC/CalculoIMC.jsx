@@ -15,20 +15,20 @@ const CalculoIMC = () => {
   const [classificacao, setClassificacao] = useState("");
 
   const calcularIMC = () => {
-    setResultado(
-      Number(valorCampoDois) / (Number(valorCampoUm) * Number(valorCampoUm))
-    );
+    const temp =
+      Number(valorCampoDois) / (Number(valorCampoUm) * Number(valorCampoUm));
+    setResultado(temp);
     switch (true) {
-      case resultado < 18.5:
+      case temp < 18.5:
         setClassificacao("Abaixo do peso");
         break;
-      case resultado < 25:
+      case temp < 25:
         setClassificacao("Peso normal");
         break;
-      case resultado < 30:
+      case temp < 30:
         setClassificacao("Sobrepeso");
         break;
-      default:
+      case temp >= 30:
         setClassificacao("Obeso");
         break;
     }
